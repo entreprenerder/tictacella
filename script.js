@@ -456,14 +456,14 @@ $(document).ready(function() {
 
 
 
-    $('#X').click(function() {
+    $('#X').on('click touchstart',function() {
         humanPlayer = X_token;
         aiPlayer = O_token;
         $('#chooseModal').closeModal();
         control();
     });
 
-    $('#O').click(function() {
+    $('#O').on('click touchstart',function() {
         humanPlayer = O_token;
         aiPlayer = X_token;
         $('#chooseModal').closeModal();
