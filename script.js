@@ -428,7 +428,7 @@ $(document).ready(function() {
             checkStatus();
         }
 
-        $('#board').on('click', '.square', (function() {
+        $('#board').on('click touchstart', '.square', (function() {
 
             hasMoved = false;
 
