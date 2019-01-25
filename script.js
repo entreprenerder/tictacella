@@ -452,8 +452,6 @@ $(document).ready(function() {
             }
         }));
 
-        $('#board').click();
-
     }
 
 
