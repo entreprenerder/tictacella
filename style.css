@@ -1,0 +1,521 @@
+#tictacpanda label:hover:before, #tictacpanda .aa:checked ~ .aa:before, #tictacpanda .ab:checked ~ .ab:before, #tictacpanda .ac:checked ~ .ac:before, #tictacpanda .ba:checked ~ .ba:before, #tictacpanda .bb:checked ~ .bb:before, #tictacpanda .bc:checked ~ .bc:before, #tictacpanda .ca:checked ~ .ca:before, #tictacpanda .cb:checked ~ .cb:before, #tictacpanda .cc:checked ~ .cc:before {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  content: "\00D7";
+  text-align: center;
+  color: #eb4a4a;
+}
+
+#tictacpanda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+#tictacpanda * {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  font: 160px/160px monospace;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: -240px;
+}
+#tictacpanda *:nth-of-type(3n+2) {
+  margin-left: -80px;
+}
+#tictacpanda *:nth-of-type(3n+3) {
+  margin-left: 80px;
+}
+#tictacpanda *:nth-of-type(9n+4), #tictacpanda *:nth-of-type(9n+5), #tictacpanda *:nth-of-type(9n+6) {
+  margin-top: -80px;
+}
+#tictacpanda *:nth-of-type(9n+7), #tictacpanda *:nth-of-type(9n+8), #tictacpanda *:nth-of-type(9n+9) {
+  margin-top: 80px;
+}
+#tictacpanda button {
+  height: 480px;
+  width: 480px;
+  background: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border: 0;
+  -webkit-transform-origin: 50% 50% !important;
+  transform-origin: 50% 50% !important;
+  z-index: 2;
+}
+#tictacpanda button:before {
+  display: table-cell;
+  padding: 30px;
+  font: 700 40px/1 Arial;
+  text-shadow: 1px 1px 0px black;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+}
+#tictacpanda button:after {
+  z-index: -1;
+  content: "";
+  width: 0;
+  height: 100%;
+  border-right: 4px dashed #967755;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+#tictacpanda p {
+  cursor: default;
+}
+#tictacpanda p:before {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background: url('ellaProfile.jpg');
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+#tictacpanda .aa:checked ~ .aa, #tictacpanda .ab:checked ~ .ab, #tictacpanda .ac:checked ~ .ac, #tictacpanda .ba:checked ~ .ba, #tictacpanda .bb:checked ~ .bb, #tictacpanda .bc:checked ~ .bc, #tictacpanda .ca:checked ~ .ca, #tictacpanda .cb:checked ~ .cb, #tictacpanda .cc:checked ~ .cc {
+  cursor: default;
+}
+#tictacpanda .r {
+  z-index: 1;
+}
+#tictacpanda .aa.r, #tictacpanda .ab.r, #tictacpanda :checked ~ .r {
+  display: none;
+}
+#tictacpanda :nth-of-type(9n+1) {
+  -webkit-transform-origin: 150% 150%;
+  transform-origin: 150% 150%;
+}
+#tictacpanda :nth-of-type(9n+2) {
+  -webkit-transform-origin: 50% 150%;
+  transform-origin: 50% 150%;
+}
+#tictacpanda :nth-of-type(9n+3) {
+  -webkit-transform-origin: -50% 150%;
+  transform-origin: -50% 150%;
+}
+#tictacpanda :nth-of-type(9n+4) {
+  -webkit-transform-origin: 150% 50%;
+  transform-origin: 150% 50%;
+}
+#tictacpanda :nth-of-type(9n+5) {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+#tictacpanda :nth-of-type(9n+6) {
+  -webkit-transform-origin: -50% 50%;
+  transform-origin: -50% 50%;
+}
+#tictacpanda :nth-of-type(9n+7) {
+  -webkit-transform-origin: 150% -50%;
+  transform-origin: 150% -50%;
+}
+#tictacpanda :nth-of-type(9n+8) {
+  -webkit-transform-origin: 50% -50%;
+  transform-origin: 50% -50%;
+}
+#tictacpanda :nth-of-type(9n+9) {
+  -webkit-transform-origin: -50% -50%;
+  transform-origin: -50% -50%;
+}
+#tictacpanda #aar0g0:checked ~ *, #tictacpanda #abr0g0:checked ~ * {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#tictacpanda #aar0g0:checked ~ *:before, #tictacpanda #abr0g0:checked ~ *:before {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+#tictacpanda #aar1g0:checked ~ *, #tictacpanda #abr1g0:checked ~ * {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#tictacpanda #aar1g0:checked ~ *:before, #tictacpanda #abr1g0:checked ~ *:before {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+#tictacpanda #aar2g0:checked ~ *, #tictacpanda #abr2g0:checked ~ * {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+#tictacpanda #aar2g0:checked ~ *:before, #tictacpanda #abr2g0:checked ~ *:before {
+  -webkit-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+}
+#tictacpanda .g0 {
+  display: block;
+}
+#tictacpanda .bb {
+  display: none;
+}
+#tictacpanda .bb + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ .cc, #tictacpanda #aar0g0:checked ~ .cc, #tictacpanda #aar1g0:checked ~ .cc, #tictacpanda #aar2g0:checked ~ .cc {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ .cc + p, #tictacpanda #aar0g0:checked ~ .cc + p, #tictacpanda #aar1g0:checked ~ .cc + p, #tictacpanda #aar2g0:checked ~ .cc + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ .ac, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ .ac, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ .ac, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ .ac + p, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ .ac + p, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ .ac + p, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bag0:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cag0:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cbg0:checked ~ .bc + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bag0:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cag0:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:before {
+  content: "ELLA WINS!!!.";
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #cbg0:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(0deg) scale(0.85);
+  transform: rotate(0deg) scale(0.85);
+  margin: 0px 0 0 160px;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bcg0:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:checked ~ #bcg0:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ .ab, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ .ab, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ .ab, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ .ab {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ .ab + p, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ .ab + p, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ .ab + p, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ .ab + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb, #tictacpanda #aag0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb, #tictacpanda #aag0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bag0:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bcg0:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cag0:checked ~ .cb + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #bag0:checked ~ button, #tictacpanda #aag0:checked ~ #acg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aag0:checked ~ #acg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cag0:checked ~ button, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bag0:checked ~ button, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cag0:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aag0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aag0:checked ~ #acg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aag0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aag0:checked ~ #acg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bag0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #bcg0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cag0:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(0deg) scale(0.85);
+  transform: rotate(0deg) scale(0.85);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca + p, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca + p, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca + p, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cbg0:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:before {
+  content: "NO ONE WINS :(";
+}
+#tictacpanda #aag0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #acg0:checked ~ #cbg0:checked ~ button:after {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .g1, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .g1, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .g1, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ .g1 {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ .cb + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #bcg1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(90deg) scale(0.85);
+  transform: rotate(90deg) scale(0.85);
+  margin: 160px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bag0:checked ~ #cbg1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .g1, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .g1, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .g1, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .g1 {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ .cb + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ .cb + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #bag1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(90deg) scale(0.85);
+  transform: rotate(90deg) scale(0.85);
+  margin: 160px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #bcg0:checked ~ #cbg1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .g1, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .g1, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .g1, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .g1 {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ .bc + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bag1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #cag1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(0deg) scale(0.85);
+  transform: rotate(0deg) scale(0.85);
+  margin: 0px 0 0 160px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cbg0:checked ~ #bcg1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .g1, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .g1, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .g1, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .g1 {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ .ba + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc + p, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ .bc + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ .bc + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #abg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #acg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #cbg1:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(90deg) scale(0.85);
+  transform: rotate(90deg) scale(0.85);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac + p, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac + p, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac + p, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button {
+  display: table;
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:before, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:before {
+  content: "NO ONE WINS :(";
+}
+#tictacpanda #aag0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar0g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar1g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:after, #tictacpanda #aar2g0:checked ~ #abg0:not(:checked) ~ #acg0:not(:checked) ~ #cag0:checked ~ #bcg1:checked ~ button:after {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ .ca, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ .ca, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ .ca, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ .ca {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ .ca + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ .ca + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ .ca + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ .ca + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ .g2, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ .g2, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ .g2, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ .g2 {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button {
+  display: table;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #aag2:checked ~ #acg2:not(:checked) ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ .ac + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ .ac + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button {
+  display: table;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:not(:checked) ~ #ccg2:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ .aa, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ .aa, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ .aa, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ .aa {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ .aa + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ .aa + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ .aa + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ .aa + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bcg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #cbg2:checked ~ .ba + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #ccg2:checked ~ .ba + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button {
+  display: table;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bcg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #cbg2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #ccg2:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(0deg) scale(0.85);
+  transform: rotate(0deg) scale(0.85);
+  margin: 0px 0 0 -160px;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc {
+  display: none;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc + p, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bag2:checked ~ .cc + p {
+  display: block;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bag2:checked ~ button, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bag2:checked ~ button {
+  display: table;
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:before, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:before {
+  content: "ELLA WINS!!!";
+}
+#tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abg0:checked ~ #acg2:checked ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr0g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr1g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:after, #tictacpanda #aar0g0:not(:checked) ~ #aar1g0:not(:checked) ~ #aar2g0:not(:checked) ~ #aag0:not(:checked) ~ #abr2g0:checked ~ #acg2:checked ~ #bag2:checked ~ button:after {
+  display: table;
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+  margin: 0px 0 0 0px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
